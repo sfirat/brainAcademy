@@ -1,0 +1,332 @@
+
+/*--------------flexBox---------------*/
+
+/*.flex-container {*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*list-style: none;*/
+    /*display: -webkit-box;*/
+    /*display: -moz-box;*/
+    /*display: -ms-flexbox;*/
+    /*display: -webkit-flex;*/
+    /*display: flex;*/
+    /*-webkit-flex-flow: row wrap;*/
+    /*justify-content: space-around;*/
+    /*border: 1px solid black;*/
+/*}*/
+
+/*.flex-item {*/
+    /*background: tomato;*/
+    /*padding: 5px;*/
+    /*width: 200px;*/
+    /*height: 150px;*/
+    /*margin-top: 10px;*/
+    /*line-height: 150px;*/
+    /*color: white;*/
+    /*font-weight: bold;*/
+    /*font-size: 3em;*/
+    /*text-align: center;*/
+/*}*/
+.flexContainer {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+}
+/*---------------Main----------------*/
+body{
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    font-size: 13px;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.pageBlock{
+    margin: 15px 0 0 0;
+    /*padding: 15px;*/
+    background-color: #fff;
+}
+.floatLeft{
+    float: left;
+}
+ol {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+}
+.backgroundColor{
+    background-color: #e1e5eb;
+}
+/*--------------header---------------*/
+header{
+    background-color: #4e7097;
+    }
+
+header .head_div{
+    width: 960px;
+    height: 42px;
+    margin: auto;
+}
+
+.logo{
+    width: 165px;
+    text-align: center;
+
+}
+.logoBg {
+    background: url(../img/head_icons.png?6) no-repeat;
+    background-position: 0 -98px;
+    height: 19px;
+    width: 33px;
+    margin: 11px 10px 0 0;
+}
+
+.search{
+    width: 230px;
+    height: 42px;
+    text-align: center;
+}
+.head_input {
+    border: 0;
+    border-left: 8px;
+    box-sizing: border-box;
+    margin: 7px 0;
+    padding: 6px 6px 6px 19px;
+    height: 28px;
+    line-height: 16px;
+    width: 230px;
+    border-radius: 14px;
+    background: #305073 url(../img/dev_head_magglass.png) no-repeat;
+    background-position: left 8px;
+    color: #d9e2ec;
+    border-left: 8px solid transparent;
+}
+
+.notify{
+    width: 46px;
+    height: 42px;
+    text-align: center;
+    margin-left: 15px;
+}
+.notify:hover{
+    background: #43648c;
+}
+.notifyIcon{
+    width:20px;
+    height: 20px;
+    text-align: center;
+    margin: 11px auto;
+    background: url(../img/head_icons.png) no-repeat;
+    background-position: -5px -23px;
+}
+.player{
+    width: 46px;
+    height: 42px;
+    text-align: center;
+}
+.player:hover{
+    background: #43648c;
+}
+.playerIcon{
+    width:20px;
+    height: 20px;
+    text-align: center;
+    margin: 11px auto;
+    background: url(../img/head_icons.png) no-repeat;
+    background-position: -5px -53px;
+}
+.userInfo{
+    width: 124px;
+    height: 42px;
+    text-align: center;
+    position: inherit;
+    float: right;
+}
+.userName{
+    /*padding-right: 10px;*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+}
+.userAvatar{
+
+}
+.arrowDown{
+
+}
+
+
+/*--------------page layout---------------*/
+.pageLayout{
+    width: 960px;
+    padding:0 15px 0 15px;
+    margin: auto;
+}
+
+/*---------------side bar----------------*/
+.sideBar{
+    width: 149px;
+}
+.leftRow{
+    width: 157px;
+    height: 28px;
+    color: #285473;
+    white-space: nowrap;
+
+}
+.leftRow:hover{
+    width: 157px;
+    height: 28px;
+    background: #d1d9e0;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.sidebarText{
+    height: 28px;
+    padding: 5px 0 5px 0;
+}
+
+.iconHome{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px 6px;
+}
+.iconNews{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -917px;
+}
+.iconMessages{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -21px;
+}
+.iconFriends{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -77px;
+}
+.iconGroups{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -441px;
+}
+.iconPhotos{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -133px;
+}
+.iconAudio{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -161px;
+}
+.iconVideo{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -189px;
+}
+.iconGames{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -441px;
+}
+.iconDocs{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -273px;
+}
+.iconContactWars{
+    width: 35px;
+    height: 28px;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: url(../img/menu_icon.png) no-repeat 7px -721px;
+}
+
+/*---------------page body----------------*/
+.pageBody{
+    width: 795px;
+    margin-left: 15px;
+}
+.narrowColumn{
+    width: 230px;
+}
+.wideColumn{
+    width: 550px;
+    margin-left: 15px;
+}
+.profilePhoto{
+    width: 200px;
+    height: 182px;
+    padding: 15px;
+    background-color: #fff;
+}
+.ownerAvatar{
+    width: 200px;
+    height: 140px;
+}
+
+.profileButton{
+    width: 200px;
+    height: 40px;
+}
+.editProfile{
+    width: 200px;
+    height: 30px;
+    background-color: #e5ebf1;
+    color: #55677d;
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 7px 3px 0 3px;
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+}
+.friendsBlock{
+    width: 230px;
+    height: 425px;
+}
+
+.infoBlock{
+    width: 550px;
+    height: 237px;
+}
+.photoBlock{
+    width: 550px;
+    height: 192px;
+}
+
+.submitBlock{
+    width: 550px;
+    height: 48px;
+}
+.wallBlock{
+    width: 550px;
+    height: 800px;
+}
