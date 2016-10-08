@@ -1,0 +1,16 @@
+.paper {
+    width: 161px;
+    height: 161px;
+    background-image: url('http://svgjs.com/test/images/grid.png');
+}
+.floatLeft{
+    float: left;
+}
+#brainCanvasLeft{
+    height: 600px;
+    width: 600px;
+}
+#brainCanvasRight{
+    height: 600px;
+    width: 600px;
+}
