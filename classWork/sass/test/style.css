@@ -1,0 +1,41 @@
+.block {
+  height: 50px;
+  width: 100px;
+  border: 1px solid black;
+  box-sizing: border-box; }
+
+.karcas {
+  display: flex;
+  flex-flow: row wrap;
+  width: 300px; }
+
+.block_c0 {
+  background: #ffa195; }
+
+.block_c1 {
+  background: #fffa7e; }
+
+.block_c2 {
+  background: #faa8ff; }
+
+.block_c3 {
+  background: #ff6f6b; }
+
+.block_c4 {
+  background: #9076ff; }
+
+.block_c5 {
+  background: #80ffa2; }
+
+.block_c6 {
+  background: #30d3ff; }
+
+.block_c7 {
+  background: #ff208f; }
+
+.block_c8 {
+  background: #ff571f; }
+
+.block_c9 {
+  background: #10a0ff; }
+

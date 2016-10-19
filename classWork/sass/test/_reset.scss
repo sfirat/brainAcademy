@@ -1,0 +1,220 @@
+p{
+  padding:0px;
+  margin:0px;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+$c3:black;
+$c4: white;
+$count: 5;
+
+@for $i from 1 through $count{
+  .block#{$i}{
+    background: $c3 + ($c3 - $c4) / $count *($i - 1);
+  }
+}
+
+
+
+
+
+
+$c1: red;
+$c2: blue;
+$diff: $c2 - $c1;
+
+$count: 5;
+.block1{
+  background: $c1;
+}
+.block2{
+  background: $diff/3*1 ;
+}
+.block3{
+  background:$diff/3*2  ;
+}
+.block4{
+  background: $diff/3*2.5 ;
+}
+
+.block5{
+
+  background: $c2;
+}
+
+
+
+
+
+$color: rgb(255,255,0);
+$c2: rgb(0,0,255);
+$black: rgb(0,0,0);
+$white: rgb(255,255,255);
+div {
+  color:($c2 - $color);
+}
+span{
+  color: $black;
+}
+div{
+  color: $white/4;
+}
+.nex{
+  color: red;
+}
+
+%inline-type {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: -4px;
+  vertical-align: top;
+}
+
+%for-grids {
+  min-height: 1px;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.sgrid-N {
+  @extend %inline-type;
+}
+
+
+@import "reset";
+
+$red: #333;
+$font: center;
+
+.nav{
+  background-color: $red;
+}
+.cent{
+  text-align: $font;
+
+  .new{
+    height:30px;
+    border: 1px solid black;
+  }
+  .site{
+    width: 50px;
+    background-color: #7f0;
+  }
+}
+.mas{
+  height: 30px;
+  border: 1px solid black;
+}
+.d{
+  @extend .mas;
+}
+
+
+
+.z{
+  @extend .mas;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___________________________
+
+
+
+
+
+@mixin text{
+  color:red;
+  font-size: 20px;
+}
+@mixin x{
+  background: coral;
+}
+div{
+  @include text;
+}
+div{
+  @include x;
+}
+.bold{
+  font-weigxt:bold;}
+
+$xyu: red;
+
+.cl_1{
+  color: $xyu;
+  background: black;
+  .cl_2{
+    color:red;
+    .block{
+      border: 1px solid black;
+    }
+  }
+
+}
+.cl_1{
+  color: $xyu;
+}
+.cl_1 .cl_2{
+
+}
+.n{
+  border: 1px solid black;
+
+  & .c-red{
+    color: red;
+  }
+
+}
+$d_center: 0px auto;
+
+$width: 100px;
+
+
+div{
+  bacground: red;
+
+  &.w2{
+    width: $width*2;
+    border: 1px solid black;
+
+  }
+  &.w{
+    width: $width;
+    border: 1px solid black;
+
+  }
+  &.w3{
+    width :$width*3;
+    border: 1px solid black;
+
+  }
+}

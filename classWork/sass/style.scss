@@ -1,0 +1,13 @@
+@mixin divBlock($height, $weight){
+  height: 10px;
+  weight: 10px;
+  box-sizing: content-box;
+}
+
+$c1: black;
+$c2: white;
+$count: 5;
+$base-margin: 10px;
+@for $i from 1 through $count {
+    .block#{$i} { margin-left: $base-margin * $i; }
+}

@@ -1,0 +1,21 @@
+.block{
+  height: 50px;
+  width: 100px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.karcas{
+  display: flex;
+  flex-flow: row wrap;
+  width: 300px;
+}
+
+$list: #ffa195 , #fffa7e , #faa8ff , #ff6f6b , #9076ff , #80ffa2 ,  #30d3ff , #ff208f , #ff571f , #10a0ff;
+$i: 0;
+@each $color in $list {
+  .block_c#{$i} {
+    background: $color;
+    $i: $i + 1;
+  }
+}

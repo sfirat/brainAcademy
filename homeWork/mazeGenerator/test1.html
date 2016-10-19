@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function createMatrix(width, height) {
+            var matrix = [];
+            for (var i = 0; i < height; i++) {
+                matrix[i] = [];
+                for (var j = 0; j < width; j++) {
+                    var div = document.createElement('div');
+                    div.className = 'cell';
+                    matrix[i][j] = div;
+                }
+            }
+            return matrix;
+        }
+
+        document.getElementById("b").onclick = function(){
+            var w = parseInt(document.getElementById("w").value);
+            var h = parseInt(document.getElementById("h").value);
+            var m = createMatrix(w,h);
+
+            var d = document.getElementsByClassName("field")[0];
+            for(var i=0; i<m.length; i++){
+                var row = m[i]
+                for(var j=0; j<row.length; j++){
+                    d.appendChild(row[j]);
+                }
+                d.appendChild(document.createElement('div')); //для разделения строк
+            }
+        }
+    </script>
+    <style>
+        .cell{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+
+Введите ширину: <input id="w" type="text"> <br>
+Введите высоту: <input id="h" type="text"> <br>
+<button id="b">отрисовать</button> <br>
+<div class="field">
+
+</div>
+</body>
+</html>
